@@ -1,0 +1,45 @@
+//Lab DDP 02
+//Rana Koesumastuti - 2206083496
+
+// Harga fotokopi per lembarnya adalah Rp 500,00
+// Harga akan kita jadikan ipk konstanta karena ipknya tidak berubah
+import java.util.Scanner;
+final float HARGA = 555,00;
+
+public static void main(String[] args) {
+    System.out.print("Selamat datang di Toko Fotokopi Dek Depe!");
+    System.out.print("--------------------------------------------------------");
+
+    int banyakN = input.nextInt("Masukkan jumlah mahasiswa yang ingin melakukan fotokopi: ")
+
+    for (banyakN) {
+        System.out.print("Data Mahasiswa");
+        Scanner input = new Scanner(System.in);
+        String nama = input.nextLine("Nama: ");
+        float ipk = input.nextFloat("IPK: ");
+        int jumlahLembar = input.nextInt("Jumlah Lembar: ");
+        hargaNormal = jumlahLembar * HARGA  
+
+        if (ipk > 3.5 && ipk <= 4.0) {
+            totalHarga = hargaNormal * (50/100)
+            System.out.prinyln(nama + "membayar seharga " + totalHarga + "dengan diskon sebesar 50%")
+
+        } else if (ipk > 3.0 && ipk <= 3.5) {
+            totalHarga = hargaNormal * (35/100)
+            System.out.prinyln(nama + "membayar seharga " + totalHarga + "dengan diskon sebesar 35%")
+
+        } else if (ipk > 2.5 && ipk <= 3.0) {
+            totalHarga = hargaNormal * (25/100)
+            System.out.prinyln(nama + "membayar seharga " + totalHarga + "dengan diskon sebesar 25%")
+
+        } else if (ipk >= 2.5) {
+            totalHarga = hargaNormal * (10/100)
+            System.out.prinyln(nama + "membayar seharga " + totalHarga + "dengan diskon sebesar 10%")
+
+        } else {
+            System.out.println("Mohon maaf, input yang kamu masukkan tidak valid!")
+        
+
+        }
+    }
+}
